@@ -33,6 +33,7 @@ struct list 	*new_elem()
 	}
 	data = (void*)rslt->data;
 	data->a = rand();
+	rslt->next = NULL;
 	return (rslt);
 }
 
@@ -55,7 +56,7 @@ void	list_read(struct list *head)
 	while(head)
 	{
 		data = (struct data*)head->data;
-		printf("%d : %d\n", i, data->a);
+	//	printf("%d : %d\n", i, data->a);
 		head = head->next;
 		i++;
 	}
@@ -75,5 +76,6 @@ int	main(void)
 		i++;
 	}
 	list_read(head);
+	printf("data_linked finished\n");
 	return (0);
 } 

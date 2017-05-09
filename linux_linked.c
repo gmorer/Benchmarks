@@ -71,7 +71,7 @@ void	list_read(struct data *head)
 	tmp = head;
 	while (tmp)
 	{
-		printf("%d : %d\n", i, tmp->a);
+//		printf("%d : %d\n", i, tmp->a);
 		tmp = give_data(tmp->list.next);
 	//	printf("next data adress : %p\n", tmp);
 		i++;
@@ -92,5 +92,6 @@ int		main(void)
 		i++;
 	}
 	list_read(head);
+	printf("linux linked finish");
 	return (0);
 }

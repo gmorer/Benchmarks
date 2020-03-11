@@ -1,4 +1,4 @@
-#Minimal Scrapping
+# Minimal Scrapping
 
 3 similar programms:
  - first arg: URL
